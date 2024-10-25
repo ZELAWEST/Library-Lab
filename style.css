@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(Poppins/Poppins-LightItalic.ttf);
+    font-family: "PoppinsExtraBold";
+    src: url(Poppins/Poppins-BlackItalic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Poppins";
+}
+
+body {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+.sub-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 140px 90px 1fr;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1 / 2;
+    background-image: url(icons/pexels-element5-1370295.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-column: 1;
+    grid-row: 1 / 2;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    display: grid;
+}
+
+header p {
+    width: 100%;
+}
+
+.sub-header {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    place-items: center;
+
+}
+
+
+.sub-header p.add-book button {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(218, 53, 100);
+    border: 2px solid rgb(218, 53, 100);
+    border-radius: 6px;
+    padding: 6px 19px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.sub-header p.add-book button:hover {
+    box-shadow: 0 0 12px 0 rgb(235, 60, 110);
+    background-color: rgb(218, 53, 100);
+    border: 2px solid rgb(218, 53, 100);
+    position: relative;
+    bottom: 1px;
+    left: 1px;
+}
+
+.sub-header p:nth-child(5) img {
+    border-top: red solid 3px;
+    border-bottom: rgb(0, 98, 255) solid 3px;
+}
+
+.sub-header p img {
+    width: 4.9rem;
+}
+
+
+.card-container {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,220px);
+    grid-auto-rows: 220px;
+    place-content: center;
+    gap: 18px;
+    width: 100%;
+    padding: 30px;
+    background: #CE95FF;
+    background: linear-gradient(to right, #CE95FF 0%, #c5deff 110%);
+}
+
+.card-container div.card {
+    border-radius: 6px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 24px;
+    text-align: center;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+   place-items: center;
+    padding: 0 1px;
+}
+
+.card-container div h4 {
+    grid-column: 1;
+    grid-row: 1 / 2;
+    color: #00000093;
+    font-family: "PoppinsExtraBold";
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.card-container div p {
+    width: 100%;
+    height: 100%;
+    color: #333333b7;
+}
+
+.card-container div label {
+    width: 100%;
+}
+
+
+
+.card-container .bookInfo {
+    grid-column: 1;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    gap: 3px;
+
+}
+
+.card-container .bookInfo p {
+
+    font-weight: 600;
+    font-style: italic;
+}
+
+.card-container .buttons {
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.card-container .buttons button {
+    font-size: 12px;
+    border-radius: 6px;
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.card-container div label {
+    width: 60%;
+
+    padding: 2px;
+    color: white;
+    font-weight: 900;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: rgba(101, 119, 239, 0.755);
+}
+
+
+
+
+
+
+
+.sub-container .home-icons {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: s;
+
+
+    font-size: 30px;
+    color: #cbc8c8;
+    width: 100%;
+
+
+}
+
+.modal {
+    width: 700px;
+    height: 300px;
+    display: grid;
+
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 40%;
+    left: 30%;
+    padding: 1rem;
+    color: #fff;
+    font-weight: 900;
+    background-color: rgba(14, 14, 14, 0.627);
+    font-size: 16px;
+    z-index: 10;
+    border-radius: 8px;
+}
+
+.modal.show {
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+
+.modal form {
+    height: 90%;
+    display: grid;
+    grid-template-rows: repeat(5, 30px);
+
+    align-content: space-around;
+
+
+
+}
+
+div.title,
+div.author,
+div.pages,
+div.read {
+    width: 100%;
+    height: 30px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+
+
+
+
+
+}
+
+.modal div>* {
+    padding: 2px;
+    margin-bottom: 6px;
+    color: #0cc0db;
+
+}
+
+
+.modal div input[type="text"] {
+    border: #fff 2px solid;
+    border-radius: 6px;
+    outline: 3px solid #0cc0db;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.modal div button {
+    padding: 6px 12px;
+    background-color: #fff;
+    color: rgb(218, 53, 100) 1px solid;
+    ;
+    font-weight: 900;
+    border-radius: 18px;
+    border: 3px solid #0cc0db;
+}
+
+.card-buttons {
+
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 24px;
+    color: #ffffff;
+}
