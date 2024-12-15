@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar/font/style.css">
+    <link rel="stylesheet" href="icons/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="sub-container">
+        <header>
+
+        </header>
+        <div class="sub-header">
+            <div class="home-icons">
+
+                <p class="icon-home">
+
+                </p>
+                <p class="icon-file-multiple">
+
+                </p>
+                <p class="icon-message-reply">
+
+                </p>
+                <p class="icon-card-account-details-outline"></p>
+            </div>
+            <p> <img src="icons/21099099731678690575.svg" alt=""></p>
+            <p class="add-book"><button data-open-modal>Add Book</button></p>
+        </div>
+        <div data-modal class="modal">
+            <form method="dialog">
+               <div class="title">
+                    <label for="title">Enter Book Title</label>
+                    <input autofocus id="title" type="text">
+                </div>
+                <div class="author">
+                    <label for="author">Enter Book Author</label>
+                    <input id="author" type="text">
+                </div>
+                <div class="pages">
+                    <label for="pages">Enter Book Pages</label>
+                    <input id="pages" type="text">
+                </div>
+                <div class="read">
+                    <label for="read">Enter Book Read or Not Yet</label>
+                    <input id="read" type="text">
+                </div>
+
+
+                <div>
+                    <button class="add" type="submit">Add Book</button>
+                    <button id="closeModal" type="button">Close</button>
+                </div>
+            </form>
+
+        </div>
+        <main class="card-container">
+        </main>
+
+    </div>
+ 
+
+    <script src="script.js"></script>
+</body>
+
+</html>
