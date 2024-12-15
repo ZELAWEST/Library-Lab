@@ -1,0 +1,18 @@
+.oddnumber {
+    background-color: #ffc0cb;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#oneeven {
+    color: #0000ff;
+    font-size: 36px;
+}
+
+.oddnumber.increasefont {
+    font-size: 24px;
+}
+
+#twoeven {
+    background-color: rgb(130, 219, 130);
+    font-weight: bold;
+}
