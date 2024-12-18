@@ -167,15 +167,15 @@ class Library {
         }
         this.addOneBook = () =>{
             const that = this
-            this.addBook.addEventListener("click", function () {
+            that.addBook.addEventListener("click", function () {
                 console.log(this)
                 that.dialog.classList.add('show')
             })
         }
         this.closeDialog = function () {
             const that = this
-            this.closeButton.addEventListener("click", function () {
-
+            that.closeButton.addEventListener("click", function () {
+console.log(this)
                 that.dialog.classList.remove('show')
             })
         }
@@ -211,4 +211,5 @@ class Library {
 let library = new Library()
 library.addOneBook(library.addBook)
 library.popUpBookInsert(library.popupAddBook)
+library.closeDialog()
 library.displayBooks()
