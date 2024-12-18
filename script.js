@@ -174,8 +174,8 @@ class Library {
         }
         this.closeDialog = function () {
             const that = this
-            that.closeButton.addEventListener("click", function () {
-console.log(this + " " + that)
+            this.closeButton.addEventListener("click", function () {
+
                 that.dialog.classList.remove('show')
             })
         }
