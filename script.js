@@ -209,7 +209,7 @@ console.log(this)
 }
 
 let library = new Library()
-library.addOneBook(library.addBook)
-library.popUpBookInsert(library.popupAddBook)
+library.addOneBook()
+library.popUpBookInsert()
 library.closeDialog()
 library.displayBooks()
