@@ -61,7 +61,7 @@ header p {
 }
 
 
-.sub-header p.add-book button {
+.sub-header .addBook  {
     width: 100%;
     height: 50%;
     background-color: rgb(218, 53, 100);
@@ -73,7 +73,7 @@ header p {
     font-size: 15px;
 }
 
-.sub-header p.add-book button:hover {
+.sub-header .addBook:hover {
     box-shadow: 0 0 12px 0 rgb(235, 60, 110);
     background-color: rgb(218, 53, 100);
     border: 2px solid rgb(218, 53, 100);
